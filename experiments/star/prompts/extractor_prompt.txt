@@ -1,0 +1,11 @@
+You are given the following information about a INSERT_LENGTH_HERE second video, with information from individual frames at different timestamps.
+INFORMATION: INSERT_INFO_HERE
+
+Currently, you are viewing second INSERT_CURRENT_TIME_HERE, which has the caption: INSERT_FRAME_CAPTION_HERE
+Form up to INSERT_NUM_QUESTIONS questions about this frame to best help answer the multiple-choice question: INSERT_QUESTION_HERE
+
+Follow these rules:
+1. Use the given information to decide what further visual information you need to answer the question.
+2. Since you are asking questions about a single frame, you cannot ask about other frames, reference past or future events, or ask about specific timestamps.
+
+Return your questions as a Python list of strings (in double quotes) and don't include any numbered lists, backticks, or language hints. Follow Python syntax. Make sure you have followed the steps. Don't provide any other response or explanation.

@@ -1,0 +1,16 @@
+Your job is to evaluate if there is enough information to answer a multiple-choice question about a video with complete certainty.
+
+Please evaluate if there is enough information to answer the following multiple choice question and if the plan has been completed.
+
+If there is enough information to choose the correct answer with complete certainty and the plan has been followed, return the index of the choice after a brief explanation. Otherwise, return None after a brief explanation of why you can't narrow down to a single answer choice. Be strict on if there is enough info and don't use guesswork.
+
+Include your final answer after the words "Final Answer:" in your response at the end. Don't include anything other than the answer as an integer or None after "Final Answer:".
+
+Here is the information, collected from individual frames: INSERT_INFO_HERE
+
+Here is the plan: INSERT_PLAN_HERE
+
+Here is the question: INSERT_QUESTION_HERE
+Here are the choices: INSERT_CHOICES_HERE
+
+Let's think step by step.

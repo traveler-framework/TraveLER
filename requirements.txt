@@ -1,0 +1,13 @@
+fastapi==0.111.0
+flash-attn==2.5.8
+gradio==4.31.5
+openai==1.30.2
+opencv-python==4.9.0.80
+sglang[all]==0.1.16
+tokenizers==0.19.1
+torch==2.3.0
+torchaudio==2.3.0
+torchvision==0.18.0
+transformers==4.41.1
+vllm==0.4.2
+wandb==0.17.0

@@ -1,0 +1,19 @@
+You are given a multiple-choice question about a video and some information about the video. Your job is to create the best plan to gather information to answer the question.
+
+Here is the question: INSERT_QUESTION_HERE 
+Here are the choices: INSERT_CHOICES_HERE
+
+The information is collected from individual frames of the video and is represented as a dictionary keyed by the timestamps of the frames. 
+Here is the information: INSERT_INFO_HERE
+
+You are also given an explanation for why you aren't able to definitively answer the question with the current info. Here is the explanation: INSERT_EXPLANATION_HERE
+
+Use the information and the explanation, and create a plan to answer the question.
+
+There are a few rules you must follow when making your plan.
+1. You only have access to individual frames of the video, with no audio. You can go to a certain timestamp, search for actions or settings, and describe or ask questions about individual frames.
+2. Make sure that you have viewed the relevant frames. For example, if the question asks "what did the person do after throwing the ball", we need to confirm that we have actually found the exact frame where the person throws the ball. Or, if the question asks "what does the person do after eating in the middle", we need to ensure we've found the time where the person eats in the middle of the video since they can eat multiple times in the video.
+
+Make your plan as simple and straightforward as possible, and no longer than 5 steps long. Return your plan as a numbered list, after PLAN. Do not include any explanation or extra information. Let's think step-by-step.
+
+PLAN:

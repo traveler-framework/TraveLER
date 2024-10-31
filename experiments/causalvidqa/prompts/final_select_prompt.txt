@@ -1,0 +1,12 @@
+Your job is to answer a multiple-choice question about a video.
+
+You are given some language descriptions of individual frames at different timestamps of the video. The video is INSERT_LENGTH seconds long. Here are the descriptions: INSERT_INFO_HERE
+
+Give a brief explanation, then include your best answer in JSON format {"final_answer": <index of correct answer>} without Markdown (```json). Within the JSON, do not include anything other than the answer as one of the integers (0, 1, 2, 3, 4).
+
+Be sure to respond only in JSON!
+
+Here is the question: INSERT_QUESTION_HERE
+Here are the choices: INSERT_CHOICES_HERE
+
+If there are multiple possible answers, use context clues and logical reasoning to select the best answer. Let's think step by step.

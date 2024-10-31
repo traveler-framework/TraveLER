@@ -1,0 +1,16 @@
+Your job is to evaluate if there is enough information to answer a multiple-choice question about a video with complete certainty.
+
+Please evaluate if there is enough information to answer the following multiple choice question and if the plan has been completed.
+
+If there is enough information to choose the correct answer with complete certainty and the plan has been followed, give an explanation and include your final answer in JSON format {"final_answer": <index of correct answer>} without Markdown (```json). Otherwise, give a brief explanation of why you can't narrow down a single answer choice and return None (not null) in the JSON such as {"final_answer": None}. Within the JSON, do not include anything other than the answer as an integer or None. Be strict on of there is enough info and don't use guesswork.
+
+Always give an explanation followed by JSON!
+
+Here is the information, collected from individual frames: INSERT_INFO_HERE
+
+Here is the plan: INSERT_PLAN_HERE
+
+Here is the question: INSERT_QUESTION_HERE
+Here are the choices: INSERT_CHOICES_HERE
+
+Let's think step by step.

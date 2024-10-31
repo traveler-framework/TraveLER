@@ -1,0 +1,12 @@
+You have a INSERT_LENGTH_HERE-second video and information from individual frames. 
+Here is the information from individual frames of the video: INSERT_INFO_HERE
+
+Currently, you are viewing the frame at INSERT_CURRENT_TIME_HERE, which has the caption: INSERT_FRAME_CAPTION_HERE 
+
+Your task is to formulate up to INSERT_NUM_QUESTIONS questions about this frame to best help answer the multiple-choice question: INSERT_QUESTION_HERE
+
+Follow these rules:
+1. Use the given information to decide what further information you need to answer the question.
+2. Since you are asking questions about a single frame, you can't ask any temporal-replated questions. This means you cannot ask about other frames, reference past or future events, or ask about specific timestamps.
+
+Remember that you only have visual information. Return your questions as a Python list of strings (strings should be in double quotes) and don't have any backticks or language hints. Make sure you have followed the steps. Do not include any other explanation or text.

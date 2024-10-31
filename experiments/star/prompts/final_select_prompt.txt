@@ -1,0 +1,11 @@
+Answer a multiple choice question about a video.
+
+You are given some information about different timestamps in the INSERT_LENGTH second video.
+INFORMATION: INSERT_INFO_HERE
+
+Give a brief explanation, then return the index of the best choice after the words "Final Answer:" in your response at the end. Do not include anything other than the index of the answer as an integer after "Final Answer:". Your answer must be one of the integers (0, 1, 2, 3).
+
+QUESTION: INSERT_QUESTION_HERE
+CHOICES: INSERT_CHOICES_HERE
+
+If there are multiple possible answers, use context clues and logical reasoning to select the best answer. Let's think step by step.

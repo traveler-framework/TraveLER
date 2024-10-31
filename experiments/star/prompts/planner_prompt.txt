@@ -1,0 +1,18 @@
+Create the best plan to gather information to answer the question.
+
+QUESTION: INSERT_QUESTION_HERE 
+CHOICES: INSERT_CHOICES_HERE
+
+You are provided information collected from individual frames of the video and is represented as a dictionary keyed by the timestamps of the frames. 
+INFORMATION: INSERT_INFO_HERE
+
+You are also given an explanation for why you aren't able to definitively answer the question with the current information.
+EXPLANATION: INSERT_EXPLANATION_HERE
+
+Follow these rules:
+1. You only have access to individual frames of the video, with no audio. You can go to a certain timestamp, search for actions or settings, and describe or ask questions about individual frames.
+2. Make sure that you have viewed the relevant frames.
+
+Make your plan as simple and straightforward as possible, and no longer than 5 steps long. Return your plan as a numbered list, after PLAN. Do not include any other reponse or explanation. Let's think step-by-step.
+
+PLAN:

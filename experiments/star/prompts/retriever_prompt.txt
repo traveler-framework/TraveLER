@@ -1,0 +1,10 @@
+You are given the following information about a INSERT_LENGTH_HERE second video, with information from individual frames at different timestamps.
+INFORMATION: INSERT_INFO_HERE
+
+PLAN: INSERT_PLAN_HERE
+
+Currently, you are viewing second INSERT_CURR_HERE. Choose the timestamp, in seconds, of the next frame to view. When choosing the next frame to view, remember that you are trying to collect information to answer this multiple choice question: INSERT_QUESTION_HERE.
+
+Think of what information you need, and consider what information you already have. Use the temporal nature of the video and your past information to choose the next frame. Do not choose a frame you already have information about, and make sure that the frame you choose is at least 5 seconds apart from the second you are currently viewing.
+
+Return your answer as a single Python float representing the second you want to view. Don't provide any other response or explanation.

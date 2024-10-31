@@ -1,0 +1,44 @@
+experiment_name: star
+
+dataset:
+    name: star
+    data_path: /path/to/STAR/Charades_v1_480
+    query_file: /path/to/TraveLER/data/star_val_queries.csv
+
+vlm: 
+    model: llava-1.6-13b
+    max_new_tokens: 150
+llm: 
+    model: gpt-3.5-turbo-0125
+    temperature: 1
+
+# max iterations for Answerer
+max_iters: 9
+
+# max retries for failed LLM calls
+max_retries: 10
+
+answerer:
+    initialization: 5 # 1, 3, 5, 7, 9
+planner:
+    planner_prompt: ./prompts/planner_prompt.txt
+    planner_first_prompt: ./prompts/planner_first.txt
+retriever:
+    retriever_prompt: ./prompts/retriever_prompt.txt
+    view_range: 1 # middle +/- 1
+extractor:
+    extractor_prompt: ./prompts/extractor_prompt.txt
+    num_qs: 3
+evaluator:
+    use_plan: False
+    evaluator_prompt: ./prompts/evaluator_prompt.txt
+    final_select: ./prompts/final_select_prompt.txt
+summarizer:
+    summarizer_prompt: ./prompts/summarizer_prompt.txt
+
+results_dir: ./results/
+wandb: True
+
+logger: 
+    prompts: log_prompts.log
+    outputs: log_outputs.log

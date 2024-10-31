@@ -1,0 +1,43 @@
+experiment_name: nextqa
+
+dataset:
+    name: nextqa
+    data_path: /path/to/nextqa/videos
+    query_file: /path/to/TraveLER/data/nextqa_val_queries.csv
+
+vlm: 
+    model: llava-1.6-13b
+    max_new_tokens: 150
+llm: 
+    model: gpt-4-1106-preview
+    temperature: 1
+
+# max iterations for Answerer
+max_iters: 9
+
+# max retries for failed LLM calls
+max_retries: 10
+
+answerer:
+    initialization: 5 # 1, 3, 5, 7, 9
+planner:
+    planner_prompt: ./prompts/planner_prompt.txt
+    planner_first_prompt: ./prompts/planner_first.txt
+retriever:
+    retriever_prompt: ./prompts/retriever_prompt.txt
+    view_range: 2 # middle +/- 2
+extractor:
+    extractor_prompt: ./prompts/extractor_prompt.txt
+    num_qs: 3
+evaluator:
+    evaluator_prompt: ./prompts/evaluator_prompt.txt
+    final_select: ./prompts/final_select_prompt.txt
+summarizer:
+    summarizer_prompt: ./prompts/summarizer_prompt.txt
+
+results_dir: ./results/
+wandb: True
+
+logger: 
+    prompts: log_prompts.log
+    outputs: log_outputs.log

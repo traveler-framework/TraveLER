@@ -1,0 +1,11 @@
+Your job is to summarize the information about a video.
+
+Here is the information: INSERT_INFO_HERE. 
+
+The information is collected from individual frames and represented as a Python dictionary, with the keys being the timestamps and the values being a list of information collected from that frame.
+
+When summarizing, remember that you are trying to create the best summary to answer this question: INSERT_QUESTION_HERE, which has the following choices: INSERT_CHOICES_HERE. However, don't try to answer the question here or talk about the question in your summary.
+
+Return your summary after SUMMARY, in the same format as the original (Dict[str, List[str]]). You should wrap strings in double quotes and double check your output is parseable as a Python dictionary, but do not include any backticks or language indicators. Do not return any explanation, only return the actual summary.
+
+SUMMARY:
